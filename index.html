@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Computing for good Spring 2022 - Akshaya Patra Foundation by computing-for-good-akshaya-patra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Computing for good Spring 2022 - Akshaya Patra Foundation</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.gatech.edu/computing-for-good-akshaya-patra/team-webpage.github.io" class="btn">View on GitHub</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="goals--deliverables--team-website" class="anchor" href="#goals--deliverables--team-website" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Goals &amp; Deliverables / Team Website</h1>
+<p><strong>Team Members:</strong> Aish Dahal, Brian Haley, Dylan Rasch, Fausto Bonilla</p>
+<p><strong>Partner Organization:</strong> The Akshaya Patra Foundation</p>
+<p><strong>Organizational Needs &amp; Project Formulation</strong>
+The Akashaya Patra Foundation is a not-for-profit organization whose goal is to eliminate classroom hunger. The organization implements a mid-day meal scheme in government and government-aided schools in India. It’s currently serving wholesome food, every school day, to over 1.8 million children from over 19,039 schools.
+The organization has had a vast impact on society and the lives of so many, especially children. The organization is hoping to expand these efforts, by creating an online volunteering platform for volunteers and corporations, to work with other Non Governmental Organizations (non profits/NGOs) NGO’s on a wide range of causes, in order to accelerate social change.
+The project formulation will involve building a volunteering web application that will be used to manage all the volunteering programs and provide real time data analytics to help drive future initiatives. The app will be a portal for interaction amongst the stakeholders (volunteers, corporations, NGO partners, etc).</p>
+<p><strong>Goals &amp; Deliverables</strong>
+The main goal and deliverable for this project, will be to deliver a working application that allows stakeholders to interact before, during, and after events. It allows NGO’s (in this case Akashaya Patra) to manage their volunteers, partner organizations, and most importantly, volunteer events. The web application being built, will be comprised of the following deliverables:</p>
+<ul>
+<li>Onboarding Management
+<ul>
+<li>Registration process</li>
+</ul>
+</li>
+<li>Profile Management
+<ul>
+<li>Manage varying types of profiles (Volunteer, Corporate, NGO, etc)</li>
+</ul>
+</li>
+<li>Events Management Dashboard
+<ul>
+<li>Event details and event activity dashboard (registered users, time, organization, etc)</li>
+<li>Event creation, modification, deletion, etc</li>
+</ul>
+</li>
+<li>Communication Management
+<ul>
+<li>Notification handling through emails, etc</li>
+</ul>
+</li>
+<li>Data Analytics
+<ul>
+<li>General success metrics
+<ul>
+<li>Attendance numbers, retention, engagement, etc</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>Through these deliverables, Akasha Patra Foundation is hoping to have a portal to be able to manage events, onboard partners, volunteers, etc, manage profiles, communication, and event/participation analytics. Each of the deliverables above can be broken down into features and subtasks that will need to be completed to hit the goal/milestone.</p>
+<p><strong>Partner Organization Engagement</strong>
+The team is currently meeting once a week synchronously (weekly meeting) and communicates daily through group messages via Slack. Asynchronous communication is also being set up with Akashaya Patra via what's app and there is currently talk to establish zoom meetings every two weeks and add additional meetings if necessary.
+The meetings with Akashaya Patra will be used to provide consistent updates to the organization. We can then quickly respond to changes  and incorporate any feedback received by the organization. It will also serve as  channel for us to clarify questions  regarding the application.</p>
+<p><strong>Plan for Development</strong>
+We have broken down our first steps of development into a few categories:
+Infrastructure</p>
+<ul>
+<li>Develop CI/CD pipeline</li>
+<li>get web hosting up and running</li>
+<li>ensure infra solutions are scalable and maintainable</li>
+</ul>
+<p>Back End</p>
+<ul>
+<li>Design database tables that can hold all of the requires volunteer and user information</li>
+<li>create various endpoints to supply necessary data (e.g. get user information, get events a volunteer has signed up for, etc.)</li>
+<li>ensure the database design is flexible to additional needs found through development and that the design is scalable.</li>
+</ul>
+<p>Front End</p>
+<ul>
+<li>Pick a design framework that lets us be consistent</li>
+<li>Create a web application that  works well for mobile and desktop. We will place slightly more emphasis on mobile, but will be following up with Akshaya Patra to see how they expect their application to be consumed</li>
+<li>Create loose models of how we might expect the application to look.</li>
+<li>Identify and create reusable components.</li>
+<li>Ensure that all design is done in a way that can be easily changed after additional feedback or changes.</li>
+</ul>
+<p><strong>Roles</strong>
+It is the expectation that every team member is flexible and able to shift their work to what is providing the biggest need. With that said, some people have expertise in certain areas and will be leading those areas
+Aish Dahal - Infrastructure lead
+Brian Haley - Back end lead, main liaison with Akshaya Patra
+Dylan Rasch - Front end lead
+Fausto Bonilla  - Back end lead</p>
+<p><strong>Design Choices</strong>
+Our goal is to create a working product as quickly as possible. As a result, we are building our application on existing frameworks to help speed things upFor the front end we have identified a bootstrap theme that we will use that will speed up our front end work while also ensuring there is a consistent style throughout the web app.
+We are also using the open source JHipster framework to provide the skeleton for our application. This skeleton provides some existing database tables, login/password management, and has a connected front end and back end. It also uses SpringBoot for the backend which was important to us because it is very widespread technology and can be easily maintained.<br>
+Akashaya  Patra has their own hosting service, but we do not have access to it yet. Until then, we are considering utilizing Digital Ocean's small droplet service.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.gatech.edu/computing-for-good-akshaya-patra/team-webpage.github.io">Computing for good Spring 2022 - Akshaya Patra Foundation</a> is maintained by <a href="https://github.gatech.edu/computing-for-good-akshaya-patra">computing-for-good-akshaya-patra</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
